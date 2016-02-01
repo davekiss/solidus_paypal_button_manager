@@ -10,6 +10,6 @@ task :default => [:spec]
 
 desc 'Generates a dummy app for testing'
 task :test_app do
-  ENV['LIB_NAME'] = 'spree_paypal_button_manager'
+  ENV['LIB_NAME'] = 'solidus_paypal_button_manager'
   Rake::Task['extension:test_app'].invoke
 end
